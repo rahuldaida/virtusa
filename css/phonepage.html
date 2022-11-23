@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{
+        margin-top:2%;
+        margin-left:9%;
+    }
+        .verify{
+    border: 1px solid #dadcdf;
+    padding-top: 50px;
+    width: 580px;
+    height: 580px;
+    margin-left: 450px;
+}
+img{
+    width:30%;
+    height: 60px;
+    margin-left: 40px;
+    margin-bottom: 0px;
+}
+.verify h1{
+    margin-left:10%;
+}
+.verify a1{
+    margin-left:10%;
+    margin-right: 10px;
+    font-size:20px;
+}
+.verify a2{
+    margin-left:10%;
+    margin-right: 10px;
+    font-size:18px;
+}
+input[type=text]{
+    width:50%;
+    height: 42px;
+    margin-left:10%;
+    border-radius: 8px;
+    border: 1px solid #dadcdf;
+    border-color:blue;
+    margin-bottom: 30px;
+}
+#c3{
+    margin-left: 50px;
+}
+button{
+    margin-left: 450px;
+    background-color:#1676f3;
+    color: white;
+    font-size: 15px;
+    width: 80px;
+    border: 1px solid #1676f3;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 8px;
+    margin-top: 80px;
+}
+button:hover{
+    cursor: pointer;
+    opacity: o.9;
+}
+.bottom{
+    margin-left:13%;
+}
+label{
+    font-weight: 18px;
+    opacity: 0.9;
+}
+select{
+    border: 1px solid white;
+}
+ul{
+    list-style-type: none;
+    margin-top: 20px;
+}
+li{
+    float: left;
+
+}
+#help{
+    text-decoration: none;
+    margin-left: 146px;
+}
+#priv{
+    text-decoration: none;
+    margin-left: 30px;
+}
+#terms{
+    text-decoration: none;
+    margin-left: 30px;
+}
+    </style>
+    
+    <title>Gmail  </title>
+   
+</head>
+<body>
+    <div class="verify">
+        <img src="google.jpg"><br>
+        <h1>Verification Your Phone Number</h1>
+        <a1>For your security. Google wants to make sure that it's </a1><br><a1>really you. Google will send a text message with a six digit<br></a1> <a1>verification code.</a1>
+      <br><br>  <input type="text" name="phone num" placeholder="+91 phone Number" required>
+     <br>   <a2>Standard rates apply</a2>
+     <button id="signin" class="signinpg">Next</button>
+     <script type="text/javascript">
+      document.getElementById("signin").onclick=function(){
+          location.href="signinpage.html"
+      };
+      </script>
+    </div>
+    <div class="bottom">
+        <ul>
+            <li>
+                <label>English(unitedstates)<select nmae="languages" id="">
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+            
+               </select></label>
+                
+            </li>
+            <li id="help"><p>Help</p></li>
+            <li id="priv"><p>privacy</p></li>
+            <li id="terms"><p>Terms</p></li>
+        </ul>
+    
+    </div>
+</body>
+</html>

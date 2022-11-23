@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+              *{
+        margin-top:2%;
+        margin-left:9%;
+    }
+        input[type=text] {
+        width:60%;
+       padding: 25px 20px;
+        margin: 10px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+}
+.sign-in{
+    border: 1px solid gray;
+    margin-left:20%;
+    margin-right:25%;
+    margin-top:5%;
+    margin-bottom:0px;
+    
+}
+.sign-in img{
+    margin-left:32%;
+   
+}
+.sign-in h1{
+    margin-top:0px;
+    margin-left:42%;
+    font-size:30px;
+    font-weight: normal;
+    
+}
+.sign-in p1{
+    padding-top:2px;
+    margin-left:38%;
+    font-size:20px
+
+}
+.sign-in input{
+    margin-left:18%;
+    padding-top:8px;
+}
+.sign-in a1{
+    font-size:20px;
+    margin-left:18%;
+    color:rgb(37, 37, 255);
+}
+.sign-in p2{
+     font-size:20px;
+     color:rgb(107, 101, 101);
+     margin-left:18%;
+
+}
+.create ul{
+    
+    margin-top: 0px;
+  
+}
+.create ul li{
+    font-size: 18px;
+    font-weight: bold;
+   
+}
+.create ul li a{
+    text-decoration: none;
+    color:#1676f3;
+    margin-left: 16px;
+    background-color: white;
+    padding: 7px;
+   
+}
+.create ul li a:hover{
+    background-color:#1676f3;
+    color: white;
+}
+.sub ul li{
+    float: none;
+    font-size: 15px;
+}
+.sub ul li a{
+    background-color:white;
+    color: dimgray;
+    margin-left:16px;
+}
+.sub ul{
+    margin-top:10px;
+}
+.sub{
+    display: none;
+}
+.create ul li:hover .sub{
+    display: block;
+    position: absolute;
+    margin: 3px;   
+
+}
+
+button{
+    margin-left:65%;
+    background-color:#1676f3;
+    color: white;
+    font-size: 15px;
+    width: 80px;
+    border: 1px solid #1676f3;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 8px;
+    margin-bottom:5%;
+}
+button:hover{
+    cursor: pointer;
+    opacity: o.9;
+}
+.bottom{
+    margin-left:5%;
+    padding-top:2%;
+}
+label{
+    font-weight: 18px;
+    margin-left: 80%;
+    margin-top:0px;
+    opacity: 0.9;
+}
+select{
+    border: 1px solid white;
+}
+ul{
+    list-style-type: none;
+    margin-top: 20px;
+}
+li{
+    float: left;
+
+}
+#help{
+    text-decoration: none;
+    margin-left:30%;
+}
+#priv{
+    text-decoration: none;
+    margin-left: 30px;
+}
+#terms{
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+        </style>
+    </head>
+    <body>
+        <div class="sign-in">
+        <img src="google.jpg" width=30%>
+        <h1>Sign in</h1>
+        <p1>to continue to Gmail</p1><br><br>
+        <input type="text" name="email" placeholder="Email or phone" required><br>
+        <a1 href="#">Forgot email?</a1><br>
+        <br>
+        <br>
+        <br>
+        <p2> Not your computer?Use Guest mode to sign in privately.</p2>
+       <br> <a1 href="#">Learn more</a1>
+        <br>
+        <br>
+        <br>
+        <div class="create">
+            <ul>
+                <li class="list1"><a href="#">Create account</a>
+                    <div class="sub">
+                        <ul>
+                            <li><a href="formyselfpage.html">For myself</a></li><br>
+
+                            <li><a href="#">For my child</a></li><br>
+                            <li><a href="#">For my business</a></li><br><br>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <button id="next" class="acctype">Next</button>
+        <script type="text/javascript">
+         document.getElementById("next").onclick=function(){
+             location.href="email.html"
+         };
+         </script>
+</div>
+<div class="bottom">
+    <ul>
+        <li>
+            <label>English(unitedstates)<select nmae="languages" id="">
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+        
+           </select></label>
+            
+        </li>
+        <li id="help"><p>Help</p></li>
+        <li id="priv"><p>privacy</p></li>
+        <li id="terms"><p>Terms</p></li>
+    </ul>
+
+</div>
+
+
+
+
+
+
+
+
+
+    </body>
+</html>

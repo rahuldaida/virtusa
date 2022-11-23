@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>*{
+        margin-top:2%;
+        margin-left:9%;
+    }
+.details{
+            
+    border: 1px solid #dadcdf;
+    width: 610px;
+    height: 620px;
+    margin-left: 400px;
+}
+img{
+    width:30%;
+    height: 60px;
+    margin-left: 35px;
+    margin-bottom: 0px;
+}
+.details p1{
+    margin-left: 40px;
+    font-size: 29px;
+    margin-top: 10px;
+}
+.details p2{
+    margin-left: 40px;
+    margin-top: 0px;
+    font-size: 18px;
+}
+input[type=text]{
+    width: 200px;
+    height: 42px;
+    margin-left: 40px;
+    border-radius: 8px;
+    border: 1px solid #dadcdf;
+  
+    margin-bottom: 30px;
+}
+
+.details a1{
+    margin-bottom: 30px;
+    margin-left: 40px;
+    margin-top: -40px;
+}
+input[type=text]{
+    width: 220px;
+    height: 42px;
+    margin-left: 40px;
+    border-radius: 8px;
+    border: 1px solid #dadcdf;
+   
+    margin-bottom: 20px;
+}
+button{
+    margin-left:75%;
+    background-color:#1676f3;
+    color: white;
+    font-size: 15px;
+    width: 80px;
+    border: 1px solid #1676f3;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 8px;
+    margin-top: 80px;
+}
+button:hover{
+    cursor: pointer;
+    opacity: o.9;
+}
+.bottom{
+    margin-left:10%;
+}
+label{
+    font-weight: 18px;
+    opacity: 0.9;
+}
+select{
+    border: 1px solid white;
+}
+ul{
+    list-style-type: none;
+    margin-top: 20px;
+}
+li{
+    float: left;
+
+}
+#help{
+    text-decoration: none;
+    margin-left: 146px;
+}
+#priv{
+    text-decoration: none;
+    margin-left: 30px;
+}
+#terms{
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+    </style>
+    
+    <title>Gmail  </title>
+  
+</head>
+<body>
+    <div class="details">
+        <img src="google.jpg"><br><br>
+        <p1 >Create your Google account</p1><br><br>
+        <p2 >to continue to Gmail</p2><br><br>
+        <input type="text" name="first" placeholder="First Name" required>
+        <input type="text" name="last" placeholder="Last Name" required><br>
+        
+        <input type="text" name="email" placeholder="Email or phone" required><br>
+        <a1 id="b1">You can use letters & periods</a1><br>
+        <br>
+        <input type="text" name="password" placeholder="Password" required>
+        <input type="text" name="Confirm" placeholder="Confirm" required><br>
+        <a1>Use 8 or more Character with mix of letters, Character & symblos </a1>
+        <button id="phone" class="phoneno">Next</button>
+        <script type="text/javascript">
+         document.getElementById("phone").onclick=function(){
+             location.href="phonepage.html"
+         };
+         </script>
+        
+    </div>
+    <div class="bottom">
+        <ul>
+            <li>
+                <label>English(unitedstates)<select nmae="languages" id="">
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+            
+               </select></label>
+                
+            </li>
+            <li id="help"><p>Help</p></li>
+            <li id="priv"><p>privacy</p></li>
+            <li id="terms"><p>Terms</p></li>
+        </ul>
+    
+    </div>
+</body>
+</html>
